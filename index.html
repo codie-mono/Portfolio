@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+     font-family: "Bebas Neue", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate {
+      opacity: 0;
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .animate.visible {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background-color: #f6f6f6;
+      margin: 10px 20px;
+       
+   font-family: "Bebas Neue", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ 
+    }
+    header h1{
+      word-spacing: 0.4rem;
+    }
+
+    .circle {
+      height: 160px;
+      width: 160px;
+      background-color: darkred;
+      border-radius: 50%;
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+
+    .circle2 {
+      height: 125px;
+      width: 125px;
+      background-color: #f6f6f6;
+      border-radius: 50%;
+      display: inline-block;
+      margin-top: -1px;
+      margin-left: 20px;
+    }
+
+    .circle3 {
+      height: 25px;
+      width: 50px;
+      background-color: #f6f6f6;
+      border-radius: 50%;
+      display: inline-block;
+      margin-top: 13px;
+      margin-left: 20px;
+    }
+
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+        
+      }
+
+      50% {
+        transform: translateY(-10px);
+        
+      }
+    }
+
+    main,
+    .main {
+      text-align: center;
+      margin: 30px;
+      background-color: #f6f6f6;
+      padding: 20px;
+    }
+
+    .pr {
+      background-color: gray;
+      color: white;
+      padding: 10px;
+    }
+
+    main p,
+    p {
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    main h1 {
+      font-size: 37px;
+      font-weight: 600;
+    }
+
+    .bio {
+      padding: 15px;
+    }
+
+    .image {
+      
+      width: 190px;
+      background-color: darkred;
+      display: inline-block;
+      transition: transform 0.4s ease;
+      border: 1px solid #323232;
+    }
+
+    .image:hover {
+      transform: scale(1.1);
+    }
+
+    .card {
+      background-color: #ffffff;
+      width: 230px;
+      border-radius: 8px;
+      padding: 20px 0;
+      margin: 20px;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .content {
+      padding: 0px 5px;
+    }
+
+     p {
+      font-size: 13px;
+      padding: 5px 10px;
+      color: #b7b7b7;
+    }
+
+    .content h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: darkgray;
+      color: white;
+    }
+    .highlight{
+      color: #6E0000;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="animate">
+    <div class="circle">
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+    </div>
+    <h1>Hello</h1>
+    
+    <h1>I am <span class="highlight">codie</span> </h1>
+    <p>Web developer | Designer | Tech enthusiast</p>
+  </header>
+
+  <main class="animate">
+    <section class="bio">
+      <h1>About <span class="highlight">me</span></h1>
+      <p>Hey I am a front-end web developer and a html and css specialist.
+      I make my websites with HTML and CSS.</p>
+    </section>
+  </main>
+
+  <div class="main animate">
+    <section class="projects">
+      <div class="pr">
+        <h1>MY PROJECTS :</h1>
+      </div>
+
+      <div class="card animate">
+        
+        <div class="content">
+          <img src="blog.jpg" alt="" class="image" />
+          <h2>Blog website  </h2>
+          <p>A blogging website, often just called a blog, is a type of website where content is presented in reverse chronological order, with the most recent posts appearing first</p>
+        </div>
+      </div>
+
+      <div class="card animate">
+       <img src="portfolio.jpg" alt="" class="image" />
+        <div class="content">
+          <h2> portfolio </h2>
+          <p>
+            A personal portfolio website is a website created by an individual to showcase their work, skills, experience, and personality to potential clients, employers, or collaborators
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="animate">
+    <h2>to Contact dm me at instagram  </h2>
+    <p>&copy; All rights reserved</p>
+  </footer>
+
+  <script>
+    // Scroll animation using IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    });
+
+    document.querySelectorAll(".animate").forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+
+</html>
